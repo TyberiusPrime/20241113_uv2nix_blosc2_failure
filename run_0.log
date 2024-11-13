@@ -1,0 +1,22 @@
+warning: Git tree '/project/builds/hammer_build_blosc2_2.7.1/build' is dirty
+trace: blosc2 matched to 2.0.0
+trace: msgpack matched to 1.0.2
+trace: numpy matched to 2.1.0
+these 2 derivations will be built:
+  /nix/store/1076dbpng99gj1i7br5l00vg59dpcr14-uv2nix-hammer-app-0.1.0.drv
+  /nix/store/3jzpcky8avqk8avmgz3ysjmnns82zmly-test-venv.drv
+building '/nix/store/1076dbpng99gj1i7br5l00vg59dpcr14-uv2nix-hammer-app-0.1.0.drv'...
+building '/nix/store/3jzpcky8avqk8avmgz3ysjmnns82zmly-test-venv.drv'...
+error: builder for '/nix/store/3jzpcky8avqk8avmgz3ysjmnns82zmly-test-venv.drv' failed with exit code 1;
+       last 10 log lines:
+       >     _link(path, out_path)
+       >   File "/nix/store/sx2vpnyn4v2b1mvcr3f38a27rw2rcaql-make-venv.py", line 212, in _link
+       >     _link(path, out_path)
+       >   File "/nix/store/sx2vpnyn4v2b1mvcr3f38a27rw2rcaql-make-venv.py", line 212, in _link
+       >     _link(path, out_path)
+       >   File "/nix/store/sx2vpnyn4v2b1mvcr3f38a27rw2rcaql-make-venv.py", line 212, in _link
+       >     _link(path, out_path)
+       >   File "/nix/store/sx2vpnyn4v2b1mvcr3f38a27rw2rcaql-make-venv.py", line 205, in _link
+       >     raise FileExistsError(msg)
+       > FileExistsError: Linking '/nix/store/v256bsm7g2pz7lrszafwd0yqz9y0ybx1-blosc2-2.7.1/lib64/python3.12/site-packages/blosc2/blosc2_ext.cpython-312-x86_64-linux-gnu.so' -> '/nix/store/vhbwbm16clgp4bnr2k679mdag1rrnqbk-test-venv/lib64/python3.12/site-packages/blosc2/blosc2_ext.cpython-312-x86_64-linux-gnu.so' failed, path already exists resolving to '/nix/store/v256bsm7g2pz7lrszafwd0yqz9y0ybx1-blosc2-2.7.1/lib/python3.12/site-packages/blosc2/blosc2_ext.cpython-312-x86_64-linux-gnu.so'
+       For full logs, run 'nix log /nix/store/3jzpcky8avqk8avmgz3ysjmnns82zmly-test-venv.drv'.
